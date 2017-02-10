@@ -14,7 +14,7 @@ from __future__ import unicode_literals
 
 from django.db import migrations
 from django.core import management
-from auto_fixtures.util import load_fixtures
+from fixtures.util import load_fixtures
 
 
 def load(apps, schema_editor):

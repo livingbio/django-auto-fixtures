@@ -22,7 +22,7 @@ INSTALL_REQUIRES = (
 
 
 def version():
-    return "0.1"
+    return "0.3"
 
 
 with io.open('README.rst') as readme:
@@ -51,7 +51,7 @@ with io.open('README.rst') as readme:
         ],
         keywords='automation, requirements, format',
         install_requires=INSTALL_REQUIRES,
-        py_modules=['auto_fixtures'],
+        py_modules=['fixtures'],
         packages=find_packages(),
         zip_safe=False,
     )
