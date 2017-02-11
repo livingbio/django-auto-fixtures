@@ -56,7 +56,7 @@ class Command(BaseCommand):
             os.makedirs(dirname(path))
 
         with open(path, 'w') as f:
-            management.call_command('dumpdata', app, stdout=f)
+            management.call_command('dumpdata', app, '-a', stdout=f)
 
         os.system('gzip %s' % path)
 
